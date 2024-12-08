@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MapController;
+
+Route::get('/MapSIG', [MapController::class, 'ShowMaps']);
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +16,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('map');
+// });
